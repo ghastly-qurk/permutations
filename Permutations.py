@@ -1,8 +1,8 @@
 #This is a comment
 #Comments help you to understand my code
 
-#Program to return all permutations of a word
-#except the word itself as a list
+#Program to print all permutations of a word
+#except the word itself
 
 #word ----> Stores a word
 #permutation ----> Stores all the permutations of the word
