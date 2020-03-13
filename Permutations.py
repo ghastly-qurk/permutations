@@ -2,7 +2,6 @@
 #Comments help you to understand my code
 
 #Program to print all permutations of a word
-#except the word itself
 
 #word ----> Stores a word
 #permutation ----> Stores all the permutations of the word
@@ -11,29 +10,27 @@
 #Import permutations from itertools
 from itertools import permutations
 
+
 #Function to permutate a word
 def permutate(word):
 
-    #Print an empty line
-    print('')
-
-    #Stores all the permutations of the word as a list
+    #Stores all the permutations of the word as lists in a list
     permutation = list(permutations(word))
 
-    #Loop untill all permutations are printed
-    for permutation in permutation:
-        
-        #If permutation is not the word itself
-        if ''.join(permutation) != word:
-            
-            #Print permutation as a string
-            print(''.join(permutation))
+    #Stores permutations of the word as strings in a list
+    permutation = [''.join(permutation) for permutation in permutation]
 
+    #Prints all the permutations of the word as strings in a list
+    print(permutation)
+    
 #Main function
 def main():
     
     #Ask word input from user
     word = input('Please enter the word: ')
+
+    #Print an empty line
+    print('')
 
     #Permutate the word
     permutate(word)
