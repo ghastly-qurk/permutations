@@ -30,7 +30,7 @@ def main():
     word = input('Please enter the word: ')
 
     #Print an empty line
-    print('')
+    print()
 
     #Permutate the word
     permutate(word)
