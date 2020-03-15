@@ -3,4 +3,4 @@ Prints all the permutations of a word. This program could be used to solve jumbl
 
 Uses the permutations function from itertools module.
 
-Programmed in Python 3.5.2
+Programmed in Python 3
